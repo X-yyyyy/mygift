@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "matchName": "IEM Cologne 2026",
+    "team1": "FaZe",
+    "team2": "NAVI",
+    "beginAt": "2026-07-20T15:00:00Z",
+    "leagueName": "IEM",
+    "logo": "",
+    "startDate": "2026-07-20",
+    "endDate": ""
+  },
+  {
+    "id": "2",
+    "matchName": "ESL Pro League Season 21",
+    "team1": "G2",
+    "team2": "Vitality",
+    "beginAt": "2026-09-01T16:00:00Z",
+    "leagueName": "ESL",
+    "logo": "",
+    "startDate": "2026-09-01",
+    "endDate": ""
+  },
+  {
+    "id": "3",
+    "matchName": "BLAST Premier Fall Final 2026",
+    "team1": "Astralis",
+    "team2": "Liquid",
+    "beginAt": "2026-10-15T17:00:00Z",
+    "leagueName": "BLAST",
+    "logo": "",
+    "startDate": "2026-10-15",
+    "endDate": ""
+  },
+  {
+    "id": "4",
+    "matchName": "PGL Major 2026",
+    "team1": "MOUZ",
+    "team2": "Spirit",
+    "beginAt": "2026-11-15T15:00:00Z",
+    "leagueName": "PGL",
+    "logo": "",
+    "startDate": "2026-11-15",
+    "endDate": ""
+  },
+  {
+    "id": "5",
+    "matchName": "BLAST World Final 2026",
+    "team1": "Vitality",
+    "team2": "NAVI",
+    "beginAt": "2026-12-10T18:00:00Z",
+    "leagueName": "BLAST",
+    "logo": "",
+    "startDate": "2026-12-10",
+    "endDate": ""
+  }
+]
