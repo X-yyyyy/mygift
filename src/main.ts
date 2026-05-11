@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import Vant from 'vant'
+import 'vant/lib/index.css'
 import App from './App.vue'
 import router from './router'
 import { useAuthStore } from './stores/auth'
@@ -11,6 +13,7 @@ const pinia = createPinia()
 app.use(pinia)
 app.use(router)
 app.use(ElementPlus)
+app.use(Vant)
 
 const auth = useAuthStore()
 auth.init()

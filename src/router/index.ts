@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getAuth } from 'firebase/auth'
+import { mobileRoutes } from '@/mobile/router'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -52,6 +53,7 @@ const router = createRouter({
         },
       ],
     },
+    mobileRoutes,
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
