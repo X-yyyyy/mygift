@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '@/firebase/init'
 import AppSidebar from '@/components/layout/AppSidebar.vue'
 import AppTopBar from '@/components/layout/AppTopBar.vue'
+import { isNativeApp } from '@/utils/platform'
 
+const router = useRouter()
 const auth = useAuthStore()
 
 onMounted(async () => {
@@ -14,6 +17,10 @@ onMounted(async () => {
     if (snap.exists()) {
       const dark = !!snap.data()?.settings?.darkMode
       document.documentElement.classList.toggle('dark', dark)
+    }
+    // Redirect native app to mobile layout
+    if (isNativeApp() && !window.location.pathname.startsWith('/m/')) {
+      router.replace('/m/home')
     }
   }
 })

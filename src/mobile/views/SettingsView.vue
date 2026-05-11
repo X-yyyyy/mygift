@@ -71,8 +71,7 @@ async function handleLogout() {
           <van-field
             v-model="weatherStore.city"
             placeholder="输入城市名"
-            size="small"
-            style="width: 130px"
+style="width: 130px"
             @blur="onCityChange"
           />
         </template>

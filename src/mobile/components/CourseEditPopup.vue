@@ -62,7 +62,7 @@ function handleSave() {
     <div class="popup-content">
       <div class="popup-header">
         <span>{{ course ? '编辑课程' : '添加课程' }}</span>
-        <van-button text @click="emit('close')">取消</van-button>
+        <van-button plain @click="emit('close')">取消</van-button>
       </div>
 
       <van-form @submit="handleSave">
@@ -101,7 +101,7 @@ function handleSave() {
                 </van-radio-group>
               </template>
             </van-field>
-            <van-button v-if="form.schedules.length > 1" icon="delete" text type="danger" size="small" @click="removeSchedule(i)" />
+            <van-button v-if="form.schedules.length > 1" icon="delete" plain type="danger" size="small" @click="removeSchedule(i)" />
           </div>
         </div>
 
